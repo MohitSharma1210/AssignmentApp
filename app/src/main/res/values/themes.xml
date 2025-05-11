@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <style name="Theme.AssignmentApp" parent="Theme.Material3.DayNight.NoActionBar">-->
+<!--        <item name="colorPrimary">@color/purple_500</item>-->
+<!--        <item name="android:windowBackground">@color/purple_500</item>-->
+<!--    </style>-->
+
+<!--    &lt;!&ndash; Splash screen theme &ndash;&gt;-->
+<!--    <style name="Theme.AssignmentApp.Splash" parent="Theme.Material3.DayNight.NoActionBar">-->
+<!--        <item name="windowSplashScreenBackground">@color/purple_500</item>-->
+<!--        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>-->
+<!--        <item name="postSplashScreenTheme">@style/Theme.AssignmentApp</item>-->
+<!--    </style>-->
+
+
+    <style name="Theme.AssignmentApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@android:color/background_dark</item> <!-- Main app background -->
+        <item name="android:colorBackground">@android:color/black</item>
+    </style>
+
+    <!-- Used for launch (splash screen) -->
+    <style name="Theme.AssignmentApp.Launcher" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Custom splash for pre-Android 12 -->
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+</resources>
