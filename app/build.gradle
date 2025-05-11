@@ -52,27 +52,21 @@ dependencies {
     implementation libs.hilt.android
     kapt libs.hilt.compiler
     implementation libs.coil.compose
+    implementation libs.navigation.compose
+    implementation libs.hilt.navigation.compose
+    implementation libs.youtube.player
+    implementation libs.material
 
-    implementation "com.google.android.material:material:1.11.0"
+    implementation libs.androidx.lifecycle.viewmodel.ktx
+    implementation libs.androidx.lifecycle.viewmodel.compose
 
-    def lifecycle_version = "2.6.1"
-    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
-    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:$lifecycle_version"
+    implementation libs.retrofit
+    implementation libs.retrofit.gson
+    implementation libs.okhttp
 
-    def retrofit_version = "2.9.0"
-    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
-    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
-    implementation 'com.squareup.okhttp3:okhttp:4.9.3'
+    implementation libs.coroutines.core
+    implementation libs.coroutines.android
 
-    def coroutines_version = "1.7.0"
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version"
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines_version"
-
-    def navigation_version = "2.6.0"
-    implementation "androidx.navigation:navigation-compose:$navigation_version"
-    implementation "androidx.hilt:hilt-navigation-compose:1.0.0"
-    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:12.1.0'
-    
     testImplementation libs.junit
     androidTestImplementation libs.androidx.junit
     androidTestImplementation libs.androidx.espresso.core
